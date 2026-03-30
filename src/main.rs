@@ -1,13 +1,5 @@
-use rust_template::Point;
+mod typed;
 
 fn main() {
-    println!("Hello, world!");
-
-    let point = Point::new(1, 2);
-
-    // Convert the Point to a JSON string.
-    let serialized = point.to_json();
-
-    // Prints serialized = {"x":1,"y":2}
-    println!("Serialized point = {serialized}");
+    typed::run_example();
 }
